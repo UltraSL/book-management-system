@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #dee0fe;
+    --accent-color: #007bff;
+    --input-color: #c0c7ce;
+    --topic-color: #015600;
+    --card-bg-color: #ececec;
+  }
+  
+  .dark-theme {
+    --bg-color: #494949;
+    --text-color: #ffffff;
+    --card-bg: #1f1f1f;
+    --accent-color: #00ff88;
+    --input-color: #30373e;
+    --topic-color: #04ff00;
+    --card-bg-color: #636363;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }

@@ -1,0 +1,38 @@
+
+<div class="dashView">
+    <div class="bookView">
+        <p>~ Preview ~</p>
+        <img src="https://i.ibb.co/mVK2NXW7/book1.jpg" />
+        <h4> {{this.bookForm.value.title}} </h4>
+        <p>{{this.bookForm.value.author}}</p>
+        <p>{{this.bookForm.value.genre}}</p>
+        <p>{{this.bookForm.value.publishedYear}}</p>
+        <div class="rating">
+            <i *ngFor="let s of [].constructor(this.bookForm.value.rating)" class="fas fa-star"></i>
+        </div> 
+    </div> 
+ 
+ 
+    <div class="formClass">
+        <h2>Add New Book</h2>
+        <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+            <div>
+                <input type="text" formControlName="title" placeholder="Book Title" />
+            </div>
+            <div>
+                <input type="text" formControlName="author" placeholder="Author"/>
+            </div>
+            <div>
+                <input type="text" formControlName="genre" placeholder="Genre"/>
+            </div>
+            <div>
+                <input type="number" formControlName="publishedYear" placeholder="Published Year"/>
+            </div>
+            <div>
+                <input type="number" formControlName="rating" placeholder="Rating (1-5)"/>
+            </div>
+            <button type="submit" [disabled]="bookForm.invalid" >Add Book</button>
+        </form>
+    </div>
+ 
+</div>

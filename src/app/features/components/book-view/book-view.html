@@ -1,0 +1,20 @@
+
+<div class="view-toggle">
+    <i (click)="setView('list')" class="fa-solid fa-list"></i>
+    <i (click)="setView('grid')" class="fa-solid fa-grip-vertical"></i>
+</div> 
+ 
+<div class="books-container" [ngClass]="viewMode">  
+    <div *ngFor="let book of books" class="bookList"> 
+        <img src="https://i.ibb.co/mVK2NXW7/book1.jpg" alt="{{book.title}} Cover" width="100" height="150"/>
+        <div class="bookinfo">
+            <h4>{{book.title}}</h4>
+            <p>Author: {{book.author}}</p> 
+            <p>Genre: {{book.genre}}</p>
+            <p>Published: {{book.publishedYear}}</p>    
+            <div class="rating">
+                <i *ngFor="let s of [].constructor(book.rating)" class="fas fa-star"></i> 
+            </div>
+        </div> 
+    </div>
+</div>

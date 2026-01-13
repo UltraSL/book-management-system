@@ -1,0 +1,62 @@
+.dashView {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+
+.bookView {
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 10px 20px var(--accent-color);
+}
+
+.bookView img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.formClass {
+  flex: 1;
+  max-width: 420px;
+  padding: 16px;
+}
+
+
+.formClass input,
+.formClass button {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 600px) {
+  .dashView {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .bookView {
+    width: 100%;
+  }
+
+  .formClass {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+

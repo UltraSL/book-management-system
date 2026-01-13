@@ -1,0 +1,88 @@
+
+
+.books-container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.books-container.list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.books-container.list .bookList {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: left;
+}
+
+.books-container.list img {
+  width: 100px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.bookList {
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    display: inline-block;
+    align-content: center;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bookList:hover {
+    box-shadow: 4px 4px 10px var(--text-color);
+    
+}
+
+.view-toggle {
+    margin-left: auto;
+    justify-content: end;
+    background-color: #ff6600;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.view-toggle i {
+    padding: 10px;
+    margin: 10px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+  .books-container.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+
+    .bookList {
+        width: 70%;
+        height: auto;
+    }
+
+    .books-container.list {
+      width: 80%;
+    }
+}
+
+
