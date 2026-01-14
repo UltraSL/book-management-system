@@ -1,5 +1,12 @@
 # BookManagement
 
+*******PLEASE FIND THE SERVER REPOSITORY FIRST AND RUN IT************ 
+
+Clone the backend server from here. 
+https://github.com/UltraSL/book-system-server.git
+
+********READ THE Read.ME FILE THERE ALSO TO SETUP THE BACKEND*******
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
 
 ## Development server
